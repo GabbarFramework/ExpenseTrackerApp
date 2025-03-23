@@ -49,17 +49,17 @@ plugins {
 }
 
 android {
-    namespace = "com.peterchege.expensetrackerapp"
+    namespace = "com.adyan.expenseflow"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.peterchege.expensetrackerapp"
+        applicationId = "com.adyan.expenseflow"
         minSdk = 21
         targetSdk = 35
         versionCode = 4
         versionName = "4.0"
 
-        testInstrumentationRunner = "com.peterchege.expensetrackerapp.HiltTestRunner"
+        testInstrumentationRunner = "com.adyan.expenseflow.HiltTestRunner"
         vectorDrawables {
             useSupportLibrary = true
         }

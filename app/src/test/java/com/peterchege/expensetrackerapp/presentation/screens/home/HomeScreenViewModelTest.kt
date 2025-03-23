@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.peterchege.expensetrackerapp.presentation.screens.home
+package com.adyan.expenseflow.presentation.screens.home
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.peterchege.expensetrackerapp.MainDispatcherRule
-import com.peterchege.expensetrackerapp.core.room.entities.TransactionEntity
-import com.peterchege.expensetrackerapp.domain.use_case.GetAllExpensesUseCase
-import com.peterchege.expensetrackerapp.domain.use_case.GetAllIncomeUseCase
-import com.peterchege.expensetrackerapp.domain.use_case.GetFilteredTransactionsUseCase
+import com.adyan.expenseflow.MainDispatcherRule
+import com.adyan.expenseflow.core.room.entities.TransactionEntity
+import com.adyan.expenseflow.domain.use_case.GetAllExpensesUseCase
+import com.adyan.expenseflow.domain.use_case.GetAllIncomeUseCase
+import com.adyan.expenseflow.domain.use_case.GetFilteredTransactionsUseCase
 import io.mockk.*
 import io.mockk.impl.annotations.MockK
 import kotlinx.coroutines.ExperimentalCoroutinesApi

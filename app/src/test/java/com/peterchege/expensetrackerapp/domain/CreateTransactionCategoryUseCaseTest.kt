@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.peterchege.expensetrackerapp.domain
+package com.adyan.expenseflow.domain
 
-import com.peterchege.expensetrackerapp.core.room.entities.TransactionCategoryEntity
-import com.peterchege.expensetrackerapp.core.util.Resource
-import com.peterchege.expensetrackerapp.domain.models.TransactionCategory
-import com.peterchege.expensetrackerapp.domain.repository.TransactionCategoryRepository
-import com.peterchege.expensetrackerapp.domain.use_case.CreateTransactionCategoryUseCase
+import com.adyan.expenseflow.core.room.entities.TransactionCategoryEntity
+import com.adyan.expenseflow.core.util.Resource
+import com.adyan.expenseflow.domain.models.TransactionCategory
+import com.adyan.expenseflow.domain.repository.TransactionCategoryRepository
+import com.adyan.expenseflow.domain.use_case.CreateTransactionCategoryUseCase
 import io.mockk.*
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.toList

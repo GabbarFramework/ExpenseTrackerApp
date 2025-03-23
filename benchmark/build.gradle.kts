@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.peterchege.benchmark"
+    namespace = "com.adyan.benchmark"
     compileSdk = 34
 
     compileOptions {
@@ -37,11 +37,15 @@ android {
         }
     }
 
-    testOptions.managedDevices.devices {
-        create<ManagedVirtualDevice>(name = "pixel4api33").apply {
-            device = "Pixel 4"
-            apiLevel = 33
-            systemImageSource = "google"
+    testOptions {
+        managedDevices {
+            allDevices {
+                create<ManagedVirtualDevice>("pixel4api33").apply {
+                    device = "Pixel 4"
+                    apiLevel = 33
+                    systemImageSource = "google"
+                }
+            }
         }
     }
 

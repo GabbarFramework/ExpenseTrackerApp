@@ -6,7 +6,7 @@ a room database so no need for internet connection
 
 Currently available on the Play Store
 
-<a href='https://play.google.com/store/apps/details?id=com.peterchege.expensetrackerapp'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height='80px'/></a>
+<a href='https://play.google.com/store/apps/details?id=com.adyan.expenseflow'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height='80px'/></a>
 
 
 ## Screenshots of the app
