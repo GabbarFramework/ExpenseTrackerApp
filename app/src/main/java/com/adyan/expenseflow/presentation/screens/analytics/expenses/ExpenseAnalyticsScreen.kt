@@ -153,7 +153,7 @@ fun ExpensesAnalyticsScreenContent(
                         style = TextStyle(color = MaterialTheme.colorScheme.primary)
                     )
                     Text(
-                        text = "KES " + it.slice.value.toString() + "/=",
+                        text = "₹ " + it.slice.value.toString() + "/=",
                         modifier = Modifier.padding(3.dp),
                         fontSize = 17.sp,
                         style = TextStyle(color = MaterialTheme.colorScheme.primary)

@@ -100,7 +100,7 @@ fun ExpenseCard(
 
                 }
                 Text(
-                    text = "KES ${expense.expenseAmount} /=",
+                    text = "₹ ${expense.expenseAmount} /=",
                     textAlign = TextAlign.Start,
                     fontWeight = FontWeight.Bold,
                     style = TextStyle(color = MaterialTheme.colorScheme.primary)

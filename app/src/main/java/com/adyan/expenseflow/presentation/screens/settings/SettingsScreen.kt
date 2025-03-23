@@ -1,18 +1,3 @@
-/*
- * Copyright 2023 Expense Tracker App By Peter Chege
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.adyan.expenseflow.presentation.screens.settings
 
 import android.annotation.SuppressLint
@@ -41,14 +26,12 @@ import androidx.navigation.NavController
 import com.adyan.expenseflow.BuildConfig
 import com.adyan.expenseflow.core.util.Constants
 import com.adyan.expenseflow.core.util.getAppVersionName
-import com.adyan.expenseflow.core.util.showReviewDialog
 import com.adyan.expenseflow.presentation.alertDialogs.ThemeDialog
 import com.adyan.expenseflow.presentation.components.SettingsRow
 
 @Composable
 fun SettingsScreen(
     viewModel: SettingsScreenViewModel = hiltViewModel(),
-    openOSSMenu: () -> Unit,
     navigateToAboutScreen: () -> Unit,
 
     ) {
@@ -58,7 +41,6 @@ fun SettingsScreen(
         theme = theme,
         uiState = uiState,
         updateTheme = { viewModel.updateTheme(it) },
-        openOSSMenu = openOSSMenu,
         toggleThemeDialogVisibility = viewModel::toggleThemeDialogVisibility,
         navigateToAboutScreen = navigateToAboutScreen
     )
@@ -73,7 +55,6 @@ fun SettingsScreenContent(
     navigateToAboutScreen: () -> Unit,
     toggleThemeDialogVisibility: () -> Unit,
     updateTheme: (String) -> Unit,
-    openOSSMenu: () -> Unit,
 ) {
 
     val context = LocalContext.current
@@ -127,25 +108,7 @@ fun SettingsScreenContent(
                         onClick = toggleThemeDialogVisibility
                     )
                 }
-                item {
-                    SettingsRow(
-                        title = "Open Source Licenses",
-                        onClick = openOSSMenu
-                    )
-                }
 
-                item {
-                    SettingsRow(
-                        title = "Rate Us On Playstore",
-                        onClick = {
-                            showReviewDialog(
-                                activity = context as Activity,
-                                onComplete = {},
-                                onFailure = {}
-                            )
-                        }
-                    )
-                }
             }
 
             Column(
@@ -168,7 +131,7 @@ fun SettingsScreenContent(
                     fontSize = 11.sp
                 )
                 Text(
-                    text = "Made with ❤️ by Peter Chege 🇰🇪",
+                    text = "Made with ❤️ by Adyan Shaikh",
                     modifier = Modifier,
                     style = TextStyle(color = MaterialTheme.colorScheme.primary),
                     fontSize = 12.sp
@@ -187,7 +150,6 @@ fun SettingsScreenContentPreview() {
         uiState = SettingsScreenUiState(),
         navigateToAboutScreen = {},
         toggleThemeDialogVisibility = {},
-        updateTheme = {},
-        openOSSMenu = {}
+        updateTheme = {}
     )
 }

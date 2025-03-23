@@ -100,7 +100,7 @@ fun TransactionCard(
 
                 }
                 Text(
-                    text = "KES ${transaction.transactionAmount} /=",
+                    text = "₹ ${transaction.transactionAmount} /=",
                     textAlign = TextAlign.Start,
                     fontWeight = FontWeight.Bold,
                     style = TextStyle(color = MaterialTheme.colorScheme.primary)

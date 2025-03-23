@@ -113,7 +113,7 @@ fun IncomeCard(
 
                 }
                 Text(
-                    text = "KES ${income.incomeAmount} /=",
+                    text = "₹ ${income.incomeAmount} /=",
                     textAlign = TextAlign.Start,
                     fontWeight = FontWeight.Bold,
                     style = TextStyle(color = MaterialTheme.colorScheme.primary)

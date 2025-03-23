@@ -214,7 +214,7 @@ fun HomeScreenContent(
                                     fontSize = 16.sp
                                 )
                                 Text(
-                                    text = "KES $remainingIncome /=",
+                                    text = "₹ $remainingIncome /=",
                                     fontWeight = FontWeight.Bold,
                                     fontSize = 30.sp,
                                     style = TextStyle(color = MaterialTheme.colorScheme.primary)

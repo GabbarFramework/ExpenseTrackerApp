@@ -227,8 +227,7 @@ fun BottomNavigation(
             popExitTransition = { popExitAnimation }
         ) {
             SettingsScreen(
-                navigateToAboutScreen = navHostController::navigateToAboutScreen,
-                openOSSMenu = openOSSMenu
+                navigateToAboutScreen = navHostController::navigateToAboutScreen
             )
         }
 
